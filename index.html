@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>L.10 Personal Soccer | Treino de futebol com ex-jogador profissional em Campo Grande</title>
+<meta name="description" content="Treino de futebol personalizado com Leandro Oliveira, ex-jogador profissional com passagens pelo Japão e pela Arábia Saudita. Atendimento no seu condomínio em Campo Grande/MS.">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="canonical" href="https://l10personalsoccer.com.br/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="L.10 Personal Soccer | Treine com quem viveu o jogo de verdade">
+<meta property="og:description" content="Treino de futebol personalizado no seu condomínio, com ex-jogador que atuou no Brasil, no Japão e na Arábia Saudita.">
+<meta property="og:url" content="https://l10personalsoccer.com.br/">
+<meta property="og:image" content="https://l10personalsoccer.com.br/img/og.jpg">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsActivityLocation",
+  "name": "L.10 Personal Soccer",
+  "description": "Treino de futebol personalizado com ex-jogador profissional, no condomínio do aluno.",
+  "url": "https://l10personalsoccer.com.br/",
+  "telephone": "+55 67 98178-7097",
+  "areaServed": {"@type": "City", "name": "Campo Grande, MS"},
+  "sameAs": ["https://www.instagram.com/l10.personalsoccer/"],
+  "founder": {"@type": "Person", "name": "Leandro Oliveira"}
+}
+</script>
+
+<style>
+:root{
+  --bg:#0A0A0A;
+  --bg-2:#131313;
+  --line:rgba(255,255,255,.10);
+  --text:#F7F7F2;
+  --muted:#A5A5A0;
+  --gold:#FFF200;
+  --gold-2:#FFF766;
+  --paper:#F4F4F0;
+  --ink:#0A0A0A;
+  --ink-muted:#55554F;
+  --radius:18px;
+  --max:1180px;
+  --display:"Archivo", system-ui, sans-serif;
+  --body:"Inter", system-ui, sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--text);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 24px}
+.display{font-style:italic;font-family:var(--display);font-stretch:112%;font-weight:800;letter-spacing:-.02em;line-height:.98;text-transform:uppercase}
+.kicker{font-family:var(--display);font-stretch:125%;font-weight:600;font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
+.lead{font-size:clamp(17px,1.6vw,20px);color:var(--muted);max-width:56ch}
+section{position:relative}
+.sec{padding:clamp(80px,11vw,140px) 0}
+.sec-head{display:grid;gap:18px;margin-bottom:clamp(40px,6vw,72px)}
+.sec-head h2{font-size:clamp(38px,6vw,76px)}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--display);font-stretch:118%;font-weight:700;font-size:14px;letter-spacing:.14em;text-transform:uppercase;padding:18px 28px;border-radius:999px;transition:transform .25s ease, background .25s ease, color .25s ease, border-color .25s ease;cursor:pointer}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-gold{background:var(--gold);color:#0A0A0A}
+.btn-gold:hover{background:var(--gold-2);transform:translateY(-2px)}
+.btn-ghost{border:1px solid rgba(242,240,234,.28);color:var(--text)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .35s ease, border-color .35s ease;border-bottom:1px solid transparent}
+.nav.scrolled{background:rgba(10,10,10,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{height:30px;width:auto}
+.brand .crest-sm{height:58px}
+.brand-word{font-family:var(--display);font-stretch:118%;font-weight:900;font-size:26px;letter-spacing:-.01em}
+.brand-word span{color:var(--gold)}
+.brand-sub{font-family:var(--display);font-stretch:125%;font-size:9.5px;letter-spacing:.34em;color:var(--muted);text-transform:uppercase;line-height:1.2}
+.nav-links{display:flex;gap:34px;font-size:14px;color:var(--muted)}
+.nav-links a:hover{color:var(--text)}
+.nav .btn{padding:12px 20px;font-size:12px}
+@media (max-width:900px){.nav-links{display:none}}
+@media (max-width:420px){.nav .btn span{display:none}.nav .btn{padding:12px}}
+
+/* hero */
+.hero{min-height:100svh;display:flex;align-items:flex-end;padding:140px 0 64px;overflow:hidden;isolation:isolate}
+.hero-media{position:absolute;inset:0;z-index:-2;background:
+  radial-gradient(1200px 600px at 78% 30%, rgba(255,242,0,.10), transparent 60%),
+  radial-gradient(900px 700px at 10% 100%, rgba(40,40,40,.6), transparent 65%),
+  linear-gradient(180deg,#111 0%,#0A0A0A 100%)}
+.hero-media img,.hero-media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero-media video{filter:saturate(.8) contrast(1.05)}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,10,.92) 0%,rgba(10,10,10,.72) 45%,rgba(10,10,10,.55) 100%)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(10,10,10,.35) 0%,rgba(10,10,10,.15) 35%,rgba(10,10,10,.92) 85%,var(--bg) 100%)}
+.hero .wrap{position:relative}
+.hero-crest{position:absolute;right:24px;top:10px;width:min(36%,440px);filter:drop-shadow(0 30px 60px rgba(255,242,0,.12))}
+@media (max-width:900px){.hero-crest{position:static;width:170px;margin:0 0 26px -6px}}
+.hero h1{font-size:clamp(46px,7vw,104px);max-width:11ch;margin:22px 0 26px}
+@media (min-width:901px){.hero .kicker,.hero h1,.hero .lead{max-width:min(58%,640px)}.hero h1{max-width:none;width:58%}}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);margin-top:clamp(56px,8vw,96px);border-top:1px solid var(--line)}
+.stat{padding:26px 22px 0 0}
+.stat + .stat{padding-left:22px;border-left:1px solid var(--line)}
+.stat b{display:block;font-family:var(--display);font-stretch:112%;font-weight:800;font-size:clamp(34px,4.6vw,58px);line-height:1;letter-spacing:-.02em}
+.stat b sup{font-size:.45em;color:var(--gold);vertical-align:top;margin-left:2px}
+.stat span{display:block;margin-top:10px;font-size:13px;color:var(--muted);line-height:1.4}
+@media (max-width:760px){
+  .stats{grid-template-columns:1fr 1fr}
+  .stat:nth-child(3){padding-left:0;border-left:0}
+  .stat:nth-child(n+3){border-top:1px solid var(--line);margin-top:22px}
+}
+
+/* faixa de condomínios */
+.marquee{border-block:1px solid var(--line);overflow:hidden;padding:22px 0;background:var(--bg-2)}
+.marquee-track{display:flex;gap:56px;width:max-content;animation:scroll 46s linear infinite}
+.marquee span{font-family:var(--display);font-stretch:118%;font-weight:600;font-size:15px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);white-space:nowrap;display:flex;align-items:center;gap:56px}
+.marquee span::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold)}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* foto com placeholder */
+.photo{position:relative;border-radius:var(--radius);overflow:hidden;background:
+  repeating-linear-gradient(135deg,rgba(242,240,234,.035) 0 14px,transparent 14px 28px),
+  linear-gradient(160deg,#1C1C1C,#101010)}
+.photo img{width:100%;height:100%;object-fit:cover}
+.photo .ph{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:24px;font-family:var(--display);font-stretch:125%;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:rgba(242,240,234,.35)}
+.photo img + .ph{display:none}
+.credit-ph{position:absolute;right:12px;bottom:10px;font-size:11px;color:rgba(255,255,255,.8);text-shadow:0 1px 3px rgba(0,0,0,.6)}
+
+/* história */
+.story-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(40px,7vw,96px);align-items:center}
+.story-grid .photo{aspect-ratio:4/5}
+.story-text p{color:var(--muted);margin-top:20px;max-width:54ch}
+.story-text p strong{color:var(--text);font-weight:600}
+.signature{margin-top:34px;display:flex;align-items:center;gap:16px}
+.signature::before{content:"";width:42px;height:2px;background:var(--gold)}
+.signature b{font-family:var(--display);font-stretch:112%;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:15px}
+.signature small{display:block;color:var(--muted);font-size:13px}
+@media (max-width:900px){.story-grid{grid-template-columns:1fr}.story-grid .photo{aspect-ratio:4/4.4}}
+
+/* carreira (seção clara) */
+.light{background:var(--paper);color:var(--ink)}
+.light .lead{color:var(--ink-muted)}
+.light .kicker{color:var(--ink)}
+.yellow{background:var(--gold);color:var(--ink)}
+.yellow .lead{color:rgba(10,10,10,.72)}
+.yellow .kicker{color:var(--ink)}
+.yellow .card-l li::before{background:var(--ink)}
+.yellow .club p{color:rgba(10,10,10,.65)}
+.yellow .club .flag{border-color:rgba(10,10,10,.35)}
+.yellow .club + .club{border-left-color:rgba(10,10,10,.18)}
+.timeline{display:grid;grid-template-columns:repeat(5,1fr);border-top:2px solid var(--ink)}
+.club{padding:28px 22px 30px 0;position:relative}
+.club + .club{padding-left:22px;border-left:1px solid rgba(18,20,18,.14)}
+.club::before{content:"";position:absolute;top:-7px;left:0;width:12px;height:12px;border-radius:50%;background:var(--ink)}
+.club + .club::before{left:22px}
+.club .yr{font-family:var(--display);font-stretch:112%;font-weight:800;font-size:44px;line-height:1;letter-spacing:-.02em}
+.club .flag{display:inline-block;margin-top:18px;font-family:var(--display);font-stretch:125%;font-size:11px;font-weight:700;letter-spacing:.24em;padding:5px 10px;border:1px solid rgba(18,20,18,.25);border-radius:999px}
+.club .flag.intl{background:var(--ink);color:var(--gold-2);border-color:var(--ink)}
+.club h3{font-family:var(--display);font-stretch:108%;font-weight:700;font-size:21px;line-height:1.15;margin-top:14px;text-transform:uppercase}
+.club p{font-size:14px;color:var(--ink-muted);margin-top:6px}
+@media (max-width:980px){
+  .timeline{grid-template-columns:1fr;border-top:0;border-left:2px solid var(--ink);margin-left:6px}
+  .club,.club + .club{padding:0 0 34px 30px;border-left:0}
+  .club::before,.club + .club::before{top:6px;left:-7px}
+  .club .yr{font-size:36px}
+}
+.also{margin-top:56px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card-l{background:#fff;border-radius:var(--radius);padding:30px;border:1px solid rgba(18,20,18,.08)}
+.card-l h4{font-family:var(--display);font-stretch:125%;font-size:11px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--ink);margin-bottom:14px}
+.card-l p,.card-l li{font-size:15.5px;color:var(--ink)}
+.card-l ul{list-style:none;display:grid;gap:12px}
+.card-l li{display:flex;gap:12px}
+.card-l li::before{content:"";flex:none;width:8px;height:8px;margin-top:9px;border-radius:2px;background:var(--gold);transform:rotate(45deg)}
+@media (max-width:760px){.also{grid-template-columns:1fr}}
+
+/* dividiu o campo */
+.versus{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.vs-col{border:1px solid var(--line);border-radius:var(--radius);padding:clamp(28px,4vw,44px);background:linear-gradient(180deg,rgba(255,255,255,.025),transparent)}
+.vs-col h3{display:flex;align-items:center;justify-content:space-between;font-family:var(--display);font-stretch:125%;font-size:12px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);padding-bottom:20px;border-bottom:1px solid var(--line);margin-bottom:8px}
+.vs-col h3 i{font-style:normal;color:var(--muted);letter-spacing:.1em}
+.names{list-style:none}
+.names li{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.names li:last-child{border-bottom:0}
+.names b{font-family:var(--display);font-stretch:112%;font-weight:700;font-size:clamp(20px,2.2vw,26px);text-transform:uppercase;letter-spacing:-.005em}
+.names small{color:var(--muted);font-size:13px;text-align:right}
+@media (max-width:860px){.versus{grid-template-columns:1fr}}
+.note{margin-top:22px;font-size:13px;color:var(--muted)}
+
+/* momento */
+.moment{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(30px,6vw,80px);align-items:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:clamp(48px,7vw,80px) 0}
+.score{font-family:var(--display);font-stretch:112%;font-weight:900;font-size:clamp(110px,18vw,230px);line-height:.82;letter-spacing:-.05em;color:var(--gold)}
+.score span{color:var(--text);opacity:.25;margin:0 .04em}
+.moment h3{font-size:clamp(28px,3.6vw,46px);margin:14px 0 18px}
+.moment p{color:var(--muted);max-width:52ch}
+.moment .score{margin-bottom:10px}
+.clip{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:1/1;background:#000;border:1px solid var(--line)}
+.clip video{width:100%;height:100%;object-fit:cover;display:block}
+.clip-tag{position:absolute;left:14px;top:14px;z-index:2;background:var(--gold);color:#0A0A0A;font-family:var(--display);font-stretch:125%;font-weight:700;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;padding:7px 12px;border-radius:999px;pointer-events:none}
+.clip-sound{position:absolute;right:14px;bottom:14px;z-index:2;display:inline-flex;align-items:center;gap:8px;background:rgba(10,10,10,.75);backdrop-filter:blur(8px);color:#fff;border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:9px 14px;font-size:13px;cursor:pointer}
+.clip-sound svg{width:16px;height:16px}
+@media (max-width:860px){.moment{grid-template-columns:1fr}}
+
+/* países */
+.world{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}
+.country{border-radius:var(--radius);padding:clamp(28px,4vw,44px);background:var(--bg-2);border:1px solid var(--line);position:relative;overflow:hidden}
+.country-photo{margin:calc(-1 * clamp(28px,4vw,44px)) calc(-1 * clamp(28px,4vw,44px)) 26px;aspect-ratio:16/9;overflow:hidden;position:relative}
+.country-photo img{width:100%;height:100%;object-fit:cover}
+.country-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,var(--bg-2))}
+.country .big{position:absolute;right:-10px;bottom:-30px;font-family:var(--display);font-stretch:125%;font-weight:900;font-size:150px;line-height:1;color:rgba(242,240,234,.035);pointer-events:none}
+.country h3{font-family:var(--display);font-stretch:112%;font-weight:800;font-size:28px;text-transform:uppercase;margin:12px 0 14px}
+.country p{color:var(--muted);max-width:44ch;position:relative}
+@media (max-width:760px){.world{grid-template-columns:1fr}}
+
+/* método */
+.quote{font-family:var(--display);font-stretch:100%;font-weight:700;font-size:clamp(28px,4.4vw,56px);line-height:1.1;letter-spacing:-.02em;max-width:22ch}
+.quote::before{content:"“";display:block;font-size:2.2em;line-height:.6;color:var(--gold);margin-bottom:12px}
+.quote-by{margin-top:24px;color:var(--muted);font-size:15px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:clamp(56px,8vw,96px)}
+.step{padding-top:24px;border-top:1px solid var(--line)}
+.step .n{font-family:var(--display);font-stretch:125%;font-size:12px;font-weight:700;letter-spacing:.24em;color:var(--gold)}
+.step h4{font-family:var(--display);font-stretch:108%;font-weight:700;font-size:20px;text-transform:uppercase;margin:14px 0 8px;line-height:1.15}
+.step p{font-size:15px;color:var(--muted)}
+@media (max-width:980px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.steps{grid-template-columns:1fr}}
+.skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:44px}
+.skills span{padding:10px 18px;border-radius:999px;border:1px solid var(--line);font-size:14px;color:var(--text);background:rgba(255,255,255,.02)}
+
+/* formatos */
+.formats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.fmt{background:#fff;border-radius:var(--radius);padding:30px 26px 32px;border:1px solid rgba(18,20,18,.08);display:flex;flex-direction:column;transition:transform .3s ease, box-shadow .3s ease}
+.fmt:hover{transform:translateY(-4px);box-shadow:0 24px 48px -28px rgba(18,20,18,.35)}
+.fmt .ic{width:46px;height:46px;border-radius:12px;background:var(--ink);display:grid;place-items:center;color:var(--gold-2)}
+.fmt .ic svg{width:24px;height:24px}
+.fmt h3{font-family:var(--display);font-stretch:108%;font-weight:800;font-size:22px;text-transform:uppercase;margin:22px 0 10px;line-height:1.1}
+.fmt p{font-size:15px;color:var(--ink-muted);flex:1}
+.fmt .tag{margin-top:22px;font-family:var(--display);font-stretch:125%;font-size:10.5px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--ink);opacity:.6}
+.fmt.feat{background:var(--ink);color:var(--text)}
+.fmt.feat p{color:var(--muted)}
+.fmt.feat .ic{background:var(--gold);color:#0A0A0A}
+.fmt.feat .tag{color:var(--gold);opacity:1}
+@media (max-width:1000px){.formats{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.formats{grid-template-columns:1fr}}
+.price-note{margin-top:30px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;padding:26px 30px;border-radius:var(--radius);border:1px dashed rgba(18,20,18,.25)}
+.price-note p{font-size:16px;color:var(--ink);max-width:60ch}
+.price-note .btn-gold{background:var(--ink);color:var(--gold-2)}
+.price-note .btn-gold:hover{background:#000}
+
+/* como funciona */
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:how}
+.how li{list-style:none;border:1px solid var(--line);border-radius:var(--radius);padding:34px 30px;background:var(--bg-2);counter-increment:how}
+.how li::before{content:"0" counter(how);font-family:var(--display);font-stretch:112%;font-weight:900;font-size:56px;line-height:1;color:var(--gold);display:block;margin-bottom:22px}
+.how h3{font-family:var(--display);font-stretch:108%;font-weight:700;font-size:21px;text-transform:uppercase;margin-bottom:8px}
+.how p{color:var(--muted);font-size:15.5px}
+@media (max-width:860px){.how{grid-template-columns:1fr}}
+
+/* onde */
+.where{display:grid;grid-template-columns:1fr 1.3fr;gap:clamp(40px,6vw,90px);align-items:start}
+.places{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+.places li{list-style:none;padding:18px 0;border-bottom:1px solid var(--line);font-family:var(--display);font-stretch:112%;font-weight:600;font-size:18px;text-transform:uppercase;display:flex;align-items:center;gap:12px}
+.places li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold);flex:none}
+.places li:nth-child(odd){padding-right:16px}
+@media (max-width:860px){.where{grid-template-columns:1fr}}
+@media (max-width:420px){.places{grid-template-columns:1fr}}
+
+/* galeria */
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:clamp(120px,14vw,190px);gap:14px}
+.gallery .photo:nth-child(1){grid-column:span 7;grid-row:span 2}
+.gallery .photo:nth-child(2){grid-column:span 5}
+.gallery .photo:nth-child(3){grid-column:span 5}
+.gallery .photo:nth-child(4){grid-column:span 4;grid-row:span 2}
+.gallery .photo:nth-child(5){grid-column:span 8;grid-row:span 2}
+@media (max-width:760px){
+  .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:150px}
+  .gallery .photo:nth-child(n){grid-column:span 1;grid-row:span 1}
+  .gallery .photo:nth-child(1){grid-column:span 2;grid-row:span 2}
+}
+
+/* faq */
+.faq{display:grid;grid-template-columns:1fr 1.5fr;gap:clamp(40px,6vw,90px)}
+.faq details{border-bottom:1px solid rgba(18,20,18,.14)}
+.faq details:first-child{border-top:1px solid rgba(18,20,18,.14)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;font-family:var(--display);font-stretch:108%;font-weight:700;font-size:19px;text-transform:uppercase;line-height:1.25}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";flex:none;width:14px;height:14px;background:
+  linear-gradient(var(--ink),var(--ink)) center/14px 2px no-repeat,
+  linear-gradient(var(--ink),var(--ink)) center/2px 14px no-repeat;transition:transform .3s ease}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 0 26px;color:var(--ink-muted);max-width:60ch}
+@media (max-width:860px){.faq{grid-template-columns:1fr}}
+
+/* cta final */
+.final{text-align:center;overflow:hidden;isolation:isolate}
+.final::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(800px 420px at 50% 100%,rgba(255,242,0,.14),transparent 70%)}
+.final h2{font-size:clamp(44px,8vw,112px);max-width:14ch;margin:22px auto 26px}
+.final h2 em{font-style:normal;color:var(--gold)}
+.final .lead{margin:0 auto 38px}
+.final .hero-cta{justify-content:center}
+
+/* rodapé */
+footer{border-top:1px solid var(--line);padding:48px 0 110px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:center}
+footer nav{display:flex;gap:24px;flex-wrap:wrap}
+footer a:hover{color:var(--gold)}
+.credit{width:100%;padding-top:24px;border-top:1px solid var(--line);font-size:12.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+/* whatsapp flutuante */
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;box-shadow:0 14px 34px -10px rgba(37,211,102,.6);transition:transform .25s ease}
+.wa-float:hover{transform:scale(1.07)}
+.wa-float svg{width:30px;height:30px}
+
+/* animação de entrada */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}.reveal.d4{transition-delay:.32s}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .marquee-track{animation:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#topo" class="brand" aria-label="L.10 Personal Soccer, voltar ao topo"><img src="img/logo-escrita-amarela.svg" alt="L.10 Personal Soccer"></a>
+    <nav class="nav-links" aria-label="Seções">
+      <a href="#historia">História</a>
+      <a href="#carreira">Carreira</a>
+      <a href="#metodo">Método</a>
+      <a href="#treinos">Treinos</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <a class="btn btn-gold js-wa" href="#" data-msg="Olá, Leandro! Vim pelo site da L.10 e quero saber sobre os treinos.">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1.1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+      <span>Agendar treino</span>
+    </a>
+  </div>
+</header>
+
+<main id="topo">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-media">
+    <video autoplay muted loop playsinline preload="auto" poster="video/hero-poster.jpg" aria-hidden="true">
+      <source src="video/hero.mp4" type="video/mp4">
+    </video>
+  </div>
+  
+  <div class="wrap">
+    <img class="hero-crest reveal" src="img/logo-escudo-amarelo.svg" alt="Escudo L.10 Personal Soccer, since 2022">
+    <p class="kicker reveal">Personal Soccer · Campo Grande / MS</p>
+    <h1 class="display reveal d1">Treine com quem viveu o jogo <em>de verdade.</em></h1>
+    <p class="lead reveal d2">Leandro Oliveira jogou 14 anos como profissional, com passagens pelo Japão, pela Arábia Saudita e por clubes do Brasil. Hoje ele leva essa experiência para o campo do seu condomínio, num treino feito sob medida para o seu filho.</p>
+    <div class="hero-cta reveal d3">
+      <a class="btn btn-gold js-wa" href="#" data-msg="Olá, Leandro! Vim pelo site da L.10 e quero agendar um treino.">Agendar um treino</a>
+      <a class="btn btn-ghost" href="#historia">Conhecer a história</a>
+    </div>
+    <div class="stats reveal d4">
+      <div class="stat"><b>14</b><span>anos como jogador profissional</span></div>
+      <div class="stat"><b>3</b><span>países: Brasil, Japão e Arábia Saudita</span></div>
+      <div class="stat"><b>150<sup>+</sup></b><span>alunos treinados desde 2022</span></div>
+      <div class="stat"><b>2<sup>anos</sup></b><span>é a idade a partir da qual atendemos</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAIXA CONDOMÍNIOS ============ -->
+<div class="marquee" aria-label="Condomínios e locais atendidos">
+  <div class="marquee-track" aria-hidden="true">
+    <span>Damha</span><span>Alphaville</span><span>Grand Palais</span><span>D'Orsay</span><span>Vernazza</span><span>Via Itália</span><span>Clube Carandá</span><span>Beirute</span><span>Graciliano Ramos</span><span>Edifício Shalom</span><span>Galdi</span><span>CT XMove</span>
+    <span>Damha</span><span>Alphaville</span><span>Grand Palais</span><span>D'Orsay</span><span>Vernazza</span><span>Via Itália</span><span>Clube Carandá</span><span>Beirute</span><span>Graciliano Ramos</span><span>Edifício Shalom</span><span>Galdi</span><span>CT XMove</span>
+  </div>
+</div>
+
+<!-- ============ HISTÓRIA ============ -->
+<section class="sec" id="historia">
+  <div class="wrap story-grid">
+    <div class="photo reveal">
+      <!-- Foto: img/leandro-retrato.jpg (vertical 4:5) -->
+      <img src="img/leandro-retrato.jpg" alt="Leandro Oliveira com a camisa 11 do Thespa Kusatsu, na J2 League do Japão" loading="lazy" onerror="this.remove()">
+      <div class="ph">Foto: Leandro<br>retrato vertical</div>
+    </div>
+    <div class="story-text">
+      <p class="kicker reveal">Quem é o professor</p>
+      <h2 class="display reveal d1" style="font-size:clamp(38px,5.6vw,72px);margin-top:18px">Um sonho de criança que virou profissão.</h2>
+      <p class="reveal d2">Nascido em Campo Grande em 1988, Leandro começou no futsal aos 6 anos, migrou para o campo e realizou o sonho de ser <strong>jogador profissional em 2007</strong>. Foram 14 anos de carreira como meio-campista, entre o Brasil, o Japão e a Arábia Saudita.</p>
+      <p class="reveal d2">Ao parar de jogar, foi convidado a treinar crianças. Em agosto de 2022 nasceu a L.10, e desde então <strong>mais de 150 alunos</strong> passaram pelos seus treinos.</p>
+      <p class="reveal d3">"Eu não escolhi, eu fui escolhido. Dou aula e trato cada aluno como eu gostaria que um professor tratasse os meus filhos." A pontualidade e o compromisso que carregou como atleta são as mesmas que leva para cada treino.</p>
+      <div class="signature reveal d4"><div><b>Leandro Oliveira</b><small>Educação Física · CREF · Certificação Futebol 360°</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CARREIRA ============ -->
+<section class="sec yellow" id="carreira">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker reveal">Carreira</p>
+      <h2 class="display reveal d1">Por onde passou.</h2>
+      <p class="lead reveal d2">Do Paraná ao Japão, os cinco clubes que marcaram a trajetória do Leandro como profissional.</p>
+    </div>
+
+    <div class="timeline">
+      <article class="club reveal"><div class="yr">2011</div><span class="flag">BRA</span><h3>Paraná Clube</h3><p>Curitiba, PR</p></article>
+      <article class="club reveal d1"><div class="yr">2012</div><span class="flag">BRA</span><h3>Santa Cruz</h3><p>Recife, PE</p></article>
+      <article class="club reveal d2"><div class="yr">2013</div><span class="flag intl">KSA</span><h3>Al Faisaly</h3><p>Arábia Saudita</p></article>
+      <article class="club reveal d3"><div class="yr">2015</div><span class="flag intl">JPN</span><h3>Thespa Kusatsu</h3><p>Japão</p></article>
+      <article class="club reveal d4"><div class="yr">2016</div><span class="flag">BRA</span><h3>Bragantino</h3><p>Bragança Paulista, SP</p></article>
+    </div>
+
+    <div class="also">
+      <div class="card-l reveal">
+        <h4>Conquistas</h4>
+        <ul>
+          <li>Acesso à Série A1 do Paulistão com o Comercial-SP, em 2013</li>
+          <li>Vice-campeão paranaense profissional, em 2009</li>
+          <li>Campeão paranaense de juniores com o J. Malucelli, em 2008</li>
+        </ul>
+      </div>
+      <div class="card-l reveal d1">
+        <h4>Também vestiu a camisa de</h4>
+        <p>J. Malucelli · Ituano · Noroeste · Comercial-SP · Guaratinguetá · Caldense</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DIVIDIU O CAMPO ============ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker reveal">Dividiu o campo com</p>
+      <h2 class="display reveal d1">Gente grande do futebol.</h2>
+      <p class="lead reveal d2">Ao longo da carreira, Leandro jogou ao lado e contra nomes que hoje são referência no Brasil e no mundo.</p>
+    </div>
+    <div class="versus">
+      <div class="vs-col reveal">
+        <h3>Jogou ao lado de <i>Mesmo time</i></h3>
+        <ul class="names">
+          <li><b>Falcão</b><small>Futsal</small></li>
+          <li><b>Jucilei</b><small>J. Malucelli</small></li>
+          <li><b>Kerlon</b><small>Paraná Clube</small></li>
+          <li><b>Júnior Urso</b><small>Ituano e Paraná Clube</small></li>
+          <li><b>Everson</b><small>Guaratinguetá · depois Santos e Atlético-MG</small></li>
+          <li><b>Hugo</b><small>Japão · ex-Grêmio e São Paulo</small></li>
+        </ul>
+      </div>
+      <div class="vs-col reveal d1">
+        <h3>Enfrentou <i>Adversários</i></h3>
+        <ul class="names">
+          <li><b>Casemiro</b><small>São Paulo · Paulistão 2011</small></li>
+          <li><b>Lucas Moura</b><small>São Paulo · Paulistão 2011</small></li>
+          <li><b>Rogério Ceni</b><small>São Paulo · Paulistão 2011</small></li>
+          <li><b>Philippe Coutinho</b><small>Vasco · Copa do Brasil 2010</small></li>
+          <li><b>Paulo Henrique Ganso</b><small>Santos · Paulistão</small></li>
+          <li><b>Arrascaeta</b><small>Cruzeiro · Mineiro</small></li>
+          <li><b>Fred</b><small>Cruzeiro · Mineiro</small></li>
+          <li><b>Thiago Neves</b><small>Cruzeiro · Mineiro</small></li>
+        </ul>
+      </div>
+    </div>
+    <p class="note reveal">E ainda: Fernando Prass, Carlos Alberto, Dedé, Jean e o uruguaio Diego Forlán, no futebol japonês.</p>
+  </div>
+</section>
+
+<!-- ============ MOMENTO ============ -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="moment">
+      <div>
+        <p class="kicker reveal">O jogo inesquecível</p>
+        <div class="score reveal" aria-label="7 a 0">7<span>×</span>0</div>
+        <h3 class="display reveal d1">Um voleio para a história.</h3>
+        <p class="reveal d2">No estádio Palma Travassos, em Ribeirão Preto, o time do Leandro goleou a Portuguesa, que naquele ano disputava a Série A do Brasileirão, por 7 a 0. Ele marcou dois gols, um deles de voleio: o mais bonito da carreira, daqueles que rendem promessa de placa no estádio.</p>
+      </div>
+      <div class="clip reveal d2">
+        <span class="clip-tag">O voleio</span>
+        <video id="voleio" autoplay muted loop playsinline preload="metadata" poster="video/voleio-poster.jpg" aria-label="Vídeo do gol de voleio do Leandro">
+          <source src="video/voleio.mp4" type="video/mp4">
+        </video>
+        <button class="clip-sound" id="voleioSom" type="button" aria-pressed="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/></svg>
+          <span>Ouvir</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="world">
+      <article class="country reveal">
+        <div class="country-photo"><img src="img/japao.jpg" alt="Leandro em treino na neve com um membro da comissão técnica, no Japão" loading="lazy" style="object-position:50% 25%"></div>
+        <span class="big" aria-hidden="true">JPN</span>
+        <p class="kicker">Japão · Thespa Kusatsu</p>
+        <h3>Educação e respeito</h3>
+        <p>"O Japão é encantador. Foi lá que aprendi o que realmente é educação e respeito." Uma lição que hoje faz parte de todo treino da L.10.</p>
+      </article>
+      <article class="country reveal d1">
+        <div class="country-photo"><img src="img/arabia.jpg" alt="Leandro com a camisa do Al Faisaly, na Arábia Saudita" loading="lazy" style="object-position:50% 40%"></div>
+        <span class="big" aria-hidden="true">KSA</span>
+        <p class="kicker">Arábia Saudita · Al Faisaly</p>
+        <h3>Treinos sob as estrelas</h3>
+        <p>Com o calor extremo do dia, os treinos na Arábia aconteciam sempre à noite. Uma cultura diferente, que exige adaptação e disciplina.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MÉTODO ============ -->
+<section class="sec" id="metodo" style="background:var(--bg-2);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <p class="kicker reveal">O método L.10</p>
+    <blockquote class="quote reveal d1" style="margin-top:26px">Eu preparo o ser humano para a vida. Depois, ele estará preparado para o esporte.</blockquote>
+    <p class="quote-by reveal d2">Respeitar o adversário, esperar a vez na fila, saber ganhar e saber perder. É para a vida que a L.10 prepara.</p>
+
+    <div class="steps">
+      <div class="step reveal"><span class="n">01 · Aquecimento</span><h4>Corpo pronto</h4><p>Aquecimento sem bola, coordenação na escada de agilidade e ativação com cones.</p></div>
+      <div class="step reveal d1"><span class="n">02 · Agilidade</span><h4>Reação e velocidade</h4><p>Estímulos de agilidade e tempo de reação que já conduzem para o trabalho com bola.</p></div>
+      <div class="step reveal d2"><span class="n">03 · Fundamentos</span><h4>A parte principal</h4><p>Passe, domínio, condução e finalização, com exercícios ajustados à idade e ao nível.</p></div>
+      <div class="step reveal d3"><span class="n">04 · Sob medida</span><h4>Cada atleta é um</h4><p>O zagueiro trabalha força e defesa. O meia trabalha velocidade e finalização. O treino muda para cada aluno.</p></div>
+    </div>
+
+    <div class="skills reveal">
+      <span>Domínio e condução</span><span>Passe e finalização</span><span>Drible e 1 contra 1</span><span>Coordenação motora</span><span>Visão de jogo</span><span>Consciência corporal</span><span>Disciplina e respeito</span><span>Confiança e autoestima</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FORMATOS ============ -->
+<section class="sec light" id="treinos">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker reveal">Treinos</p>
+      <h2 class="display reveal d1">O formato certo para o seu filho.</h2>
+      <p class="lead reveal d2">Treinos de 50 minutos a 1 hora, normalmente uma ou duas vezes por semana, com todo o material levado pelo professor.</p>
+    </div>
+    <div class="formats">
+      <article class="fmt reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="7" r="3.5"/><path d="M5 20c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5"/></svg></div>
+        <h3>Individual</h3><p>Atenção total a uma criança, com o treino montado para a posição, a idade e o objetivo dela.</p><span class="tag">1 atleta</span>
+      </article>
+      <article class="fmt reveal d1">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><circle cx="16.5" cy="8" r="3"/><path d="M2.5 19.5c.6-3 2.8-4.6 5.5-4.6s4.9 1.6 5.5 4.6M13.5 15.2c.9-.2 1.9-.3 3-.3 2.7 0 4.9 1.6 5.5 4.6"/></svg></div>
+        <h3>Dupla ou trio</h3><p>Ideal para irmãos ou amigos. Mais competição saudável sem perder a atenção individual.</p><span class="tag">2 a 3 atletas · desconto para irmãos</span>
+      </article>
+      <article class="fmt feat reveal d2">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-6h6v6"/></svg></div>
+        <h3>Turma no condomínio</h3><p>Junte os amigos do condomínio e o treino vai até vocês. Priorizamos até 4 atletas para manter o nível. Turmas maiores ganham um segundo professor.</p><span class="tag">A partir de 3 atletas</span>
+      </article>
+      <article class="fmt reveal d3">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 9v6M6 7v10M18 7v10M21 9v6M6 12h12"/></svg></div>
+        <h3>Funcional e força</h3><p>Preparação física, fortalecimento e consciência corporal, também para jovens e adultos, em academia ou no CT XMove.</p><span class="tag">De 2 anos a adultos</span>
+      </article>
+    </div>
+    <div class="price-note reveal">
+      <p><b>Valores e horários sob consulta.</b> As turmas mudam todo mês. Chame no WhatsApp para ver os horários livres da manhã e da tarde e receber os valores. Sem taxa de deslocamento.</p>
+      <a class="btn btn-gold js-wa" href="#" data-msg="Olá, Leandro! Vim pelo site da L.10 e queria saber valores e horários disponíveis.">Consultar valores</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMO FUNCIONA ============ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker reveal">Como funciona</p>
+      <h2 class="display reveal d1">Sem sair de casa.</h2>
+    </div>
+    <ol class="how">
+      <li class="reveal"><h3>Você chama</h3><p>Mande uma mensagem no WhatsApp contando a idade do seu filho e o que ele busca no futebol.</p></li>
+      <li class="reveal d1"><h3>A gente organiza</h3><p>Combinamos o melhor horário e o formato: individual, com irmãos, amigos ou uma turma no condomínio.</p></li>
+      <li class="reveal d2"><h3>O treino vai até você</h3><p>Leandro chega com todo o material e usa a quadra, o campo ou o espaço do seu condomínio. Treinou, pagou: sem burocracia.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ ONDE ============ -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap where">
+    <div class="sec-head" style="margin-bottom:0">
+      <p class="kicker reveal">Onde atendemos</p>
+      <h2 class="display reveal d1">Em toda Campo Grande.</h2>
+      <p class="lead reveal d2">Condomínios, clubes, academias e casas. Se tem espaço para uma bola rolar, a L.10 vai até você.</p>
+    </div>
+    <ul class="places reveal d1">
+      <li>Damha I, II e III</li><li>Alphaville I, II e III</li><li>Grand Palais</li><li>D'Orsay</li><li>Vernazza</li><li>Via Itália</li><li>Beirute</li><li>Graciliano Ramos</li><li>Clube Carandá</li><li>Edifício Shalom</li><li>Galdi</li><li>CT XMove</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ GALERIA ============ -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker reveal">Dentro e fora de campo</p>
+      <h2 class="display reveal d1">Da carreira aos treinos.</h2>
+    </div>
+    <div class="gallery">
+      <!-- Salve as fotos como img/galeria-1.jpg até img/galeria-5.jpg -->
+      <div class="photo reveal"><img src="img/galeria-1.jpg" alt="Leandro comemora gol pelo Thespa Kusatsu, no Japão" style="object-position:50% 30%" loading="lazy" onerror="this.remove()"><div class="ph">Foto da carreira</div><small class="credit-ph">Foto: © Kusatsuonsen FC</small></div>
+      <div class="photo reveal d1"><img src="img/galeria-2.jpg" alt="Leandro equilibra a bola na cabeça durante treino" style="object-position:50% 0%" loading="lazy" onerror="this.remove()"><div class="ph">Foto de treino</div></div>
+      <div class="photo reveal d2"><img src="img/galeria-3.jpg" alt="Leandro arrisca um voleio em treino no Japão" style="object-position:50% 60%" loading="lazy" onerror="this.remove()"><div class="ph">Foto de treino</div></div>
+      <div class="photo reveal d1"><img src="img/galeria-4.jpg" alt="Leandro ao lado de Falcão, lenda do futsal, em partida na quadra" style="object-position:70% 50%" loading="lazy" onerror="this.remove()"><div class="ph">Foto do Japão</div></div>
+      <div class="photo reveal d2"><img src="img/galeria-5.jpg" alt="Leandro conduz a bola pelo Thespa Kusatsu" style="object-position:45% 50%" loading="lazy" onerror="this.remove()"><div class="ph">Foto da turma</div></div>
+    </div>
+  </div>
+</section>
+
+<!--
+============ DEPOIMENTOS ============
+Seção pronta para quando chegarem os depoimentos REAIS dos pais (com autorização).
+Para ativar: apague a linha "<!- -" de abertura e a de fechamento deste bloco e preencha os textos.
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Quem treina, recomenda</p>
+      <h2 class="display">O que dizem os pais.</h2>
+    </div>
+    <div class="world">
+      <article class="country"><p style="color:var(--text);font-size:19px">"TEXTO DO DEPOIMENTO"</p><p class="kicker" style="margin-top:20px">NOME DO PAI · CONDOMÍNIO</p></article>
+      <article class="country"><p style="color:var(--text);font-size:19px">"TEXTO DO DEPOIMENTO"</p><p class="kicker" style="margin-top:20px">NOME DO PAI · CONDOMÍNIO</p></article>
+    </div>
+  </div>
+</section>
+-->
+
+<!-- ============ DÚVIDAS ============ -->
+<section class="sec light" id="duvidas">
+  <div class="wrap faq">
+    <div class="sec-head">
+      <p class="kicker reveal">Dúvidas</p>
+      <h2 class="display reveal d1">Perguntas frequentes.</h2>
+      <p class="lead reveal d2">Ficou alguma dúvida? Chama no WhatsApp que o Leandro responde.</p>
+    </div>
+    <div class="reveal d1">
+      <details><summary>A partir de qual idade?</summary><p>A partir de 2 anos, com estímulos de coordenação, saltos e até aprendizado de cores para os pequenos. Também atendemos adolescentes e adultos.</p></details>
+      <details><summary>Preciso ter material ou estrutura?</summary><p>Não. O Leandro leva tudo: bolas, cones, coletes, escada de agilidade, elásticos e alvo de gol. Basta um espaço como quadra, campo, gramado ou área coberta.</p></details>
+      <details><summary>E quando chove?</summary><p>Depende do condomínio. Quando existe área coberta, adaptamos o treino. Se não houver, o treino é remarcado.</p></details>
+      <details><summary>Quem pede a autorização no condomínio?</summary><p>Os pais cuidam da autorização com a administração. Depois disso, é só marcar o horário.</p></details>
+      <details><summary>Tem aula experimental?</summary><p>Não trabalhamos com aula experimental. Você pode começar com uma aula avulsa: treinou, pagou. Gostou, segue no plano mensal.</p></details>
+      <details><summary>Cobra deslocamento?</summary><p>Não. O deslocamento já está incluído, em qualquer região de Campo Grande.</p></details>
+      <details><summary>Quantas crianças por turma?</summary><p>Priorizamos até 4 atletas para manter a qualidade. Se os pais quiserem uma turma maior, entra um segundo professor para manter o nível.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<section class="sec final">
+  <div class="wrap">
+    <p class="kicker reveal">Vagas limitadas por horário</p>
+    <h2 class="display reveal d1">O próximo treino pode ser no <em>seu</em> condomínio.</h2>
+    <p class="lead reveal d2">Fale direto com o Leandro e encontre o melhor horário para o seu filho.</p>
+    <div class="hero-cta reveal d3">
+      <a class="btn btn-gold js-wa" href="#" data-msg="Olá, Leandro! Vim pelo site da L.10 e quero agendar um treino.">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1.1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+        Chamar no WhatsApp
+      </a>
+      <a class="btn btn-ghost" href="https://www.instagram.com/l10.personalsoccer/" target="_blank" rel="noopener">Ver o Instagram</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <a href="#topo" class="brand" aria-label="Voltar ao topo"><img class="crest-sm" src="img/logo-escudo-amarelo.svg" alt="L.10 Personal Soccer"><img src="img/logo-escrita-amarela.svg" alt=""></a>
+    <nav aria-label="Contato">
+      <a class="js-wa" href="#" data-msg="Olá, Leandro! Vim pelo site da L.10.">WhatsApp (67) 98178-7097</a>
+      <a href="https://www.instagram.com/l10.personalsoccer/" target="_blank" rel="noopener">@l10.personalsoccer</a>
+      <a href="mailto:oliveira.lap88@gmail.com">oliveira.lap88@gmail.com</a>
+    </nav>
+    <div class="credit">
+      <span>© <span id="ano">2026</span> L.10 Personal Soccer · Campo Grande, MS</span>
+      <a href="https://eurenanmkt.com.br" target="_blank" rel="noopener">Site por Renan M. | Social Media</a>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float js-wa" href="#" data-msg="Olá, Leandro! Vim pelo site da L.10 e quero saber sobre os treinos." aria-label="Falar com o Leandro no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1.1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+</a>
+
+<script>
+(function(){
+  var WA = '5567981787097';
+  document.querySelectorAll('.js-wa').forEach(function(a){
+    a.href = 'https://wa.me/' + WA + '?text=' + encodeURIComponent(a.dataset.msg || '');
+    a.target = '_blank'; a.rel = 'noopener';
+  });
+
+  var nav = document.getElementById('nav');
+  var onScroll = function(){ nav.classList.toggle('scrolled', window.scrollY > 30); };
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  var v = document.getElementById('voleio'), sb = document.getElementById('voleioSom');
+  if (v && sb) sb.addEventListener('click', function(){
+    v.muted = !v.muted; if (!v.muted) { v.currentTime = 0; v.play(); }
+    sb.setAttribute('aria-pressed', String(!v.muted));
+    sb.querySelector('span').textContent = v.muted ? 'Ouvir' : 'Sem som';
+  });
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('video[autoplay]').forEach(function(x){ x.pause(); });
+  }
+
+  document.getElementById('ano').textContent = new Date().getFullYear();
+
+  var els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) { els.forEach(function(e){e.classList.add('in')}); return; }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+  }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){ io.observe(e); });
+})();
+</script>
+</body>
+</html>
