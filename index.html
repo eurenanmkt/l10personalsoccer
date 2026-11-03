@@ -276,11 +276,11 @@ section[id]{scroll-margin-top:72px}
 .gallery .photo:nth-child(2){grid-column:span 5}
 .gallery .photo:nth-child(3){grid-column:span 5}
 .gallery .photo:nth-child(4){grid-column:span 4;grid-row:span 2}
-.gallery .photo:nth-child(5){grid-column:span 8;grid-row:span 2}
+.gallery .photo:nth-child(5){grid-column:span 4;grid-row:span 2} .gallery .photo:nth-child(6){grid-column:span 4;grid-row:span 2} .gallery .cap{position:absolute;left:12px;right:12px;bottom:12px;z-index:2;font-size:12.5px;line-height:1.35;color:#fff;background:rgba(10,10,10,.72);backdrop-filter:blur(6px);padding:8px 11px;border-radius:10px}
 @media (max-width:760px){
   .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:150px}
   .gallery .photo:nth-child(n){grid-column:span 1;grid-row:span 1}
-  .gallery .photo:nth-child(1){grid-column:span 2;grid-row:span 2}
+  .gallery .photo:nth-child(1),.gallery .photo:nth-child(4){grid-column:span 2;grid-row:span 2}
 }
 
 /* faq */
@@ -696,15 +696,15 @@ footer a:hover{color:var(--gold)}
   <div class="wrap">
     <div class="sec-head">
       <p class="kicker reveal">Dentro e fora de campo</p>
-      <h2 class="display reveal d1">Da carreira aos treinos.</h2>
+      <h2 class="display reveal d1">Momentos da carreira.</h2>
     </div>
     <div class="gallery">
-      <!-- Salve as fotos como img/galeria-1.jpg até img/galeria-5.jpg -->
+      <!-- Galeria da carreira: fotos escolhidas pelo Leandro -->
       <div class="photo reveal"><img src="galeria-1.jpg" alt="Leandro comemora gol pelo Thespa Kusatsu, no Japão" style="object-position:50% 30%" loading="lazy" onerror="this.remove()"><div class="ph">Foto da carreira</div><small class="credit-ph">Foto: © Kusatsuonsen FC</small></div>
-      <div class="photo reveal d1"><img src="galeria-2.jpg" alt="Leandro equilibra a bola na cabeça durante treino" style="object-position:50% 0%" loading="lazy" onerror="this.remove()"><div class="ph">Foto de treino</div></div>
-      <div class="photo reveal d2"><img src="galeria-3.jpg" alt="Leandro arrisca um voleio em treino no Japão" style="object-position:50% 60%" loading="lazy" onerror="this.remove()"><div class="ph">Foto de treino</div></div>
-      <div class="photo reveal d1"><img src="galeria-4.jpg" alt="Leandro ao lado de Falcão, lenda do futsal, em partida na quadra" style="object-position:70% 50%" loading="lazy" onerror="this.remove()"><div class="ph">Foto do Japão</div></div>
-      <div class="photo reveal d2"><img src="galeria-5.jpg" alt="Leandro conduz a bola pelo Thespa Kusatsu" style="object-position:45% 50%" loading="lazy" onerror="this.remove()"><div class="ph">Foto da turma</div></div>
+      <div class="photo reveal d1"><img src="galeria-3.jpg" alt="Leandro arrisca um voleio em treino no Japão" style="object-position:50% 60%" loading="lazy" onerror="this.remove()"><div class="ph">Foto da carreira</div></div>
+      <div class="photo reveal d2"><img src="galeria-6.jpg" alt="Leandro cumprimenta a torcida no Japão" style="object-position:50% 35%" loading="lazy" onerror="this.remove()"><div class="ph">Foto da carreira</div></div>
+      <div class="photo reveal d1"><img src="galeria-8.jpg" alt="Leandro ao lado de Falcão, o Rei do Futsal, e Adonias, o Rei do Drible" style="object-position:50% 30%" loading="lazy" onerror="this.remove()"><div class="ph">Foto da carreira</div><small class="cap">Com Falcão, o Rei do Futsal, e Adonias, o Rei do Drible</small></div>
+      <div class="photo reveal d2"><img src="galeria-5.jpg" alt="Leandro conduz a bola pelo Thespa Kusatsu" style="object-position:45% 50%" loading="lazy" onerror="this.remove()"><div class="ph">Foto da carreira</div></div> <div class="photo reveal d3"><img src="galeria-7.jpg" alt="Leandro em lance perto da área adversária" style="object-position:40% 50%" loading="lazy" onerror="this.remove()"><div class="ph">Foto da carreira</div></div>
     </div>
   </div>
 </section>
